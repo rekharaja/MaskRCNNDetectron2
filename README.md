@@ -30,4 +30,5 @@ For further help with setting up detectron2 visit: https://github.com/facebookre
 	Line 36: cfg.MODEL.WEIGHTS = os.path.join(cfg.OUTPUT_DIR, "[path to saved weights (.pth file)]")  
 	
 # Run script file for tranning:
+	$chmod +x file_name.py # to make it executable
 	$python file_name.py  [e.g: $python Mask_RCNN_Code.py]
