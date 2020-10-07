@@ -19,3 +19,15 @@ Running Mask R-CNN using Detectron2
 					pip install os
 
 For further help with setting up detectron2 visit: https://github.com/facebookresearch/detectron2/blob/master/README.md
+
+# Setting up directories in maskrcnn script file:
+
+	Line 24: register_coco_instances("my_dataset_train", {}, "[path to training annotations (.json file)]", "[path to a folder called “JPEGImages” that contains all training images that were annotated]")
+
+	Line 25: register_coco_instances("my_dataset_val", {}, "[path to validation annotations (.json file)]", "[path to a folder called “JPEGImages” that contains all validation images that were annotated]")
+
+	If you wish to continue training with saved weights:
+	Line 36: cfg.MODEL.WEIGHTS = os.path.join(cfg.OUTPUT_DIR, "[path to saved weights (.pth file)]")  
+	
+# Run script file for tranning
+	$python file_name.py
