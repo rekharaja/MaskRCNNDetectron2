@@ -29,5 +29,5 @@ For further help with setting up detectron2 visit: https://github.com/facebookre
 	If you wish to continue training with saved weights:
 	Line 36: cfg.MODEL.WEIGHTS = os.path.join(cfg.OUTPUT_DIR, "[path to saved weights (.pth file)]")  
 	
-# Run script file for tranning
+# Run script file for tranning:
 	$python file_name.py
